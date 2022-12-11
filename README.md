@@ -404,6 +404,71 @@ h1 {
 
 ---
 
-### **Pseudo-clases**
+## **Herencia**
+
+> La herencia es la capacidad de un elemento de heredar propiedades de sus elementos padres.
 
 ---
+
+## **Especificidad**
+
+> La especificidad es la capacidad de un elemento de sobreescribir propiedades de sus elementos heredados. Entre mas grande sea la especificidad, mas prioridad tendrá el elemento.
+
+```css
+/* Especificidad 0,0,1 */
+/* Tipo */
+h1 {
+  color: red;
+  font-size: 30px;
+}
+/* Especificidad 0,1,0 */
+/* Clase */
+.title {
+  color: blue;
+  font-size: 20px;
+}
+/* Especificidad 1,0,0 */
+/* ID */
+#title {
+  color: purple;
+  font-size: 20px;
+}
+/* Especificidad 0,1,1 */
+h1.title {
+  color: green;
+  font-size: 20px;
+}
+```
+
+---
+
+## **Cascada**
+
+> La cascada es la capacidad de un elemento de sobreescribir propiedades de sus elementos heredados y especificados.
+
+```css
+h1 {
+  color: red;
+  font-size: 30px;
+}
+h1 {
+  color: blue;
+  /* Cascada */
+  font-size: 20px;
+}
+h1 {
+  color: purple;
+  /* Cascada */
+  color: green;
+}
+```
+
+---
+
+## **BEM**
+
+> BEM es un método de nomenclatura para clases y selectores en CSS.
+
+```css
+
+```
